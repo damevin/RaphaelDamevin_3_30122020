@@ -60,5 +60,42 @@ body header .explore--location .button-explore {
   border-radius: 50px;
   padding: 18px 30px;
 }
+body .section--fonctionnalities {
+  font-family: "Roboto", sans-serif;
+}
+body .section--fonctionnalities h3 {
+  margin: 30px 10px 15px;
+}
+body .section--fonctionnalities .mini--card {
+  margin: 5px 20px;
+  /* Configuration for secondary mini-card */
+}
+body .section--fonctionnalities .mini--card .content {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .section--fonctionnalities .mini--card .content .circle {
+  background-color: #8a5dd5;
+  color: white;
+  border-radius: 50%;
+  padding: 1px 7px;
+  margin: 0px 10px 0px -11px;
+  font-size: 15px;
+}
+body .section--fonctionnalities .mini--card .content p {
+  font-size: 16px;
+}
+body .section--fonctionnalities .mini--card .content .mini--icon {
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+body .section--fonctionnalities .mini--card .secondary {
+  background-color: #f4eef4 !important;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -79,4 +79,45 @@ body {
       }
     }
   }
+  .section--fonctionnalities {
+    font-family: $font-content;
+    h3 {
+      margin: 30px 10px 15px;
+    }
+    .mini--card {
+      margin: 5px 20px;
+
+      .content {
+        background-color: rgb(246, 246, 246);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .circle {
+          background-color: rgb(138, 93, 213);
+          color: white;
+          border-radius: 50%;
+          padding: 1px 7px;
+          margin: 0px 10px 0px -11px ;
+          font-size: 15px
+        }
+        p {
+          font-size: 16px;
+        }
+        .mini--icon {
+          width: 50px;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      /* Configuration for secondary mini-card */
+      .secondary {
+        background-color: rgb(244, 238, 244)!important;
+      }
+    }
+  }
 }
+
+
