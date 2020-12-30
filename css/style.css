@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+/* Font Styles variables */
+/* Colors variables */
+body {
+  background: white;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body header {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header .header--title img {
+  width: 150px;
+  padding: 20px 0px 20px 0px;
+}
+body header .header--title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 65px;
+}
+body header .header--location {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: rgba(231, 231, 231, 0.5);
+  box-shadow: -1px 29px 23px -14px rgba(0, 0, 0, 0.13) inset;
+}
+body header .header--location p {
+  margin: 10px;
+}
+body header .explore--location {
+  background-color: #f6f6f6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+body header .explore--location .title {
+  padding: 0px 40px;
+  font-size: 15px;
+}
+body header .explore--location .subtitle {
+  font-weight: 100;
+  font-size: 13px;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+body header .explore--location .button-explore {
+  background: linear-gradient(#d579d5, #9d64d5);
+  box-shadow: 1px 16px 43px -2px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 18px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
