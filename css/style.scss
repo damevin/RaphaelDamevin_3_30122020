@@ -18,6 +18,13 @@ body {
     text-decoration: none;
     color: black;
   }
+  h3 {
+    margin: 30px 10px 15px;
+    font-family: $font-content;
+  }
+  p {
+    font-family: $font-content-secondary;
+  }
 
   header {
     overflow-x: hidden;
@@ -79,13 +86,10 @@ body {
       }
     }
   }
+
   .section--fonctionnalities {
-    font-family: $font-content;
-    h3 {
-      margin: 30px 10px 15px;
-    }
     .mini--card {
-      margin: 5px 20px;
+      margin: 10px 20px;
 
       .content {
         background-color: rgb(246, 246, 246);
@@ -115,6 +119,44 @@ body {
       /* Configuration for secondary mini-card */
       .secondary {
         background-color: rgb(244, 238, 244)!important;
+      }
+    }
+  }
+  .section--restaurants {
+    padding-top: 15px;
+    background-color: rgb(246,246,246);
+    .restaurant--card {
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: white;
+      border: 1px grey solid;
+      img {
+        height: 140px;
+        width: 320px;
+        object-fit: cover;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        padding: 5px
+      }
+      .heart {
+        margin-top: 10px;
+        margin-left: 120px;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+      }
+      .restaurant-name {
+        font-family: $font-content;
+        font-weight: bolder;
+      }
+      .restaurant-location {
+        font-family: $font-content-secondary;
+        font-weight: lighter;
       }
     }
   }

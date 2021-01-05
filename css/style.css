@@ -9,6 +9,13 @@ body a {
   text-decoration: none;
   color: black;
 }
+body h3 {
+  margin: 30px 10px 15px;
+  font-family: "Roboto", sans-serif;
+}
+body p {
+  font-family: "Roboto Thin", sans-serif;
+}
 body header {
   overflow-x: hidden;
   display: flex;
@@ -60,14 +67,8 @@ body header .explore--location .button-explore {
   border-radius: 50px;
   padding: 18px 30px;
 }
-body .section--fonctionnalities {
-  font-family: "Roboto", sans-serif;
-}
-body .section--fonctionnalities h3 {
-  margin: 30px 10px 15px;
-}
 body .section--fonctionnalities .mini--card {
-  margin: 5px 20px;
+  margin: 10px 20px;
   /* Configuration for secondary mini-card */
 }
 body .section--fonctionnalities .mini--card .content {
@@ -96,6 +97,44 @@ body .section--fonctionnalities .mini--card .content .mini--icon {
 }
 body .section--fonctionnalities .mini--card .secondary {
   background-color: #f4eef4 !important;
+}
+body .section--restaurants {
+  padding-top: 15px;
+  background-color: #f6f6f6;
+}
+body .section--restaurants .restaurant--card {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px grey solid;
+}
+body .section--restaurants .restaurant--card img {
+  height: 140px;
+  width: 320px;
+  object-fit: cover;
+}
+body .section--restaurants .restaurant--card .content {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+body .section--restaurants .restaurant--card .heart {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+body .section--restaurants .restaurant--card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+body .section--restaurants .restaurant--card .restaurant-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+body .section--restaurants .restaurant--card .restaurant-location {
+  font-family: "Roboto Thin", sans-serif;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */
