@@ -258,6 +258,26 @@ body {
     }
   }
   footer {
+    h3 {
+      font-family: $font-title;
+      font-weight: normal;
+    }
+    li {
+      font-family: $font-content;
+      list-style: none;
+      margin: 5px;
+    }
+    a {
+      color: white;
+    }
+    i {
+      margin-right: 5px;
+    }
+    ul {
+      padding: 10px;
+    }
+    padding-top: 7px;
+    padding-bottom: 20px;
     background-color: rgb(53,53,53);
     color: rgb(255,255,255);
   }

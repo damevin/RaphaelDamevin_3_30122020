@@ -227,8 +227,28 @@ body .section--restaurants .restaurant--card .novelties-flag p {
   margin: 5px 10px 5px 10px;
 }
 body footer {
+  padding-top: 7px;
+  padding-bottom: 20px;
   background-color: #353535;
   color: white;
+}
+body footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+}
+body footer li {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  margin: 5px;
+}
+body footer a {
+  color: white;
+}
+body footer i {
+  margin-right: 5px;
+}
+body footer ul {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
