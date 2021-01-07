@@ -99,12 +99,13 @@ body {
     }
   }
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
 
     .header--title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       img {
         width: 150px;
         padding: 20px 0px 20px 0px;
@@ -123,8 +124,8 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(231, 231, 231, 0.5);
-      box-shadow: -1px 29px 23px -14px rgba(0, 0, 0, 0.130) inset;
+      background: rgb(234, 234, 234);
+      box-shadow: -2px 19px 21px -8px rgba(0,0,0,0.26) inset;
       p {
         margin: 15px
       }
@@ -137,8 +138,7 @@ body {
       padding-bottom: 75px;
 
       .title {
-        margin-top: 30px;
-        padding: 0px 70px;
+        padding: 20px 70px;
         font-size: 15px;
       }
 
@@ -163,18 +163,16 @@ body {
   .section--fonctionnalities {
     font-family: $font-content;
     .mini--card {
-      margin: 10px 20px;
-
+      margin: 20px 20px;
+      box-shadow: 0px 2px 19px -2px rgba(0,0,0,0.17);
+      border-radius: 15px;
+      background-color: rgb(246, 246, 246);
 
       .content {
-        background-color: rgb(246, 246, 246);
-        border-radius: 15px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        box-shadow: 0px 26px 96px -63px rgba(0,0,0,0.33);
-
         .circle {
           background-color: rgb(138, 93, 213);
           color: white;
@@ -195,6 +193,10 @@ body {
       /* Configuration for secondary mini-card */
       .secondary {
         background-color: rgb(244, 238, 244)!important;
+        border-radius: 15px;
+        .mini--icon {
+          color: rgb(138, 93, 213)
+        }
       }
     }
   }
@@ -256,6 +258,143 @@ body {
         }
       }
     }
+  }
+  //Section for menus pages//
+  .back-home {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+  .banniere-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .sections-restaurants-menu {
+    background-color: rgb(246, 246, 246);
+    margin-top: -4rem;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+  }
+  .menu-header {
+    font-family: $font-title;
+    font-weight: normal;
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .restaurants-menus {
+    display: grid;
+  }
+  .menus {
+    flex: 1;
+  }
+  .menus-titles {
+    margin-left: 15px;
+    font-family: $font-content;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .menus-titles:after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu-content-card {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+  }
+  .menu-content {
+    .title {
+      font-family: $font-content;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .description {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .menu-price {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: .5rem;
+  }
+  .menu-content-check {
+    background-color: #99e2d0;
+    margin: -16px -250px -16px 16px;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+  }
+  .menu-content-check-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+  }
+  .menu-content-check:hover {
+    margin-right: -10px;
+  }
+  .menu-content-check-icon:hover {
+    transform: rotate(0);
+  }
+  .delay-1 {
+  animation-delay: .1s;
+  }
+  .delay-2 {
+  animation-delay: .2s;
+  }
+  .delay-3 {
+  animation-delay: .3s;
+  }
+  .delay-4 {
+    animation-delay: .4s;
+  }
+  .delay-5 {
+    animation-delay: .5s;
+  }
+  .delay-6 {
+    animation-delay: .6s;
+  }
+  .delay-7 {
+    animation-delay: .7s;
+  }
+  .delay-8 {
+    animation-delay: .8s;
   }
   footer {
     h3 {

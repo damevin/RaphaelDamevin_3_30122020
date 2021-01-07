@@ -82,7 +82,7 @@ body .loader__item--3 {
     transform: translateY(0);
   }
 }
-body header {
+body header .header--title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +103,8 @@ body header .header--location {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(231, 231, 231, 0.5);
-  box-shadow: -1px 29px 23px -14px rgba(0, 0, 0, 0.13) inset;
+  background: #eaeaea;
+  box-shadow: -2px 19px 21px -8px rgba(0, 0, 0, 0.26) inset;
 }
 body header .header--location p {
   margin: 15px;
@@ -116,8 +116,7 @@ body header .explore--location {
   padding-bottom: 75px;
 }
 body header .explore--location .title {
-  margin-top: 30px;
-  padding: 0px 70px;
+  padding: 20px 70px;
   font-size: 15px;
 }
 body header .explore--location .subtitle {
@@ -138,17 +137,17 @@ body .section--fonctionnalities {
   font-family: "Roboto", sans-serif;
 }
 body .section--fonctionnalities .mini--card {
-  margin: 10px 20px;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  background-color: #f6f6f6;
   /* Configuration for secondary mini-card */
 }
 body .section--fonctionnalities .mini--card .content {
-  background-color: #f6f6f6;
-  border-radius: 15px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 26px 96px -63px rgba(0, 0, 0, 0.33);
 }
 body .section--fonctionnalities .mini--card .content .circle {
   background-color: #8a5dd5;
@@ -168,6 +167,10 @@ body .section--fonctionnalities .mini--card .content .mini--icon {
 }
 body .section--fonctionnalities .mini--card .secondary {
   background-color: #f4eef4 !important;
+  border-radius: 15px;
+}
+body .section--fonctionnalities .mini--card .secondary .mini--icon {
+  color: #8a5dd5;
 }
 body .section--restaurants {
   padding-top: 15px;
@@ -225,6 +228,140 @@ body .section--restaurants .restaurant--card .novelties-flag {
 }
 body .section--restaurants .restaurant--card .novelties-flag p {
   margin: 5px 10px 5px 10px;
+}
+body .back-home {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+body .banniere-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+body .sections-restaurants-menu {
+  background-color: #f6f6f6;
+  margin-top: -4rem;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+}
+body .menu-header {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  padding: 1rem 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .restaurants-menus {
+  display: grid;
+}
+body .menus {
+  flex: 1;
+}
+body .menus-titles {
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+}
+body .menus-titles:after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body .menu-content-card {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+body .menu-content .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .menu-content .description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .menu-price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+body .menu-content-check {
+  background-color: #99e2d0;
+  margin: -16px -250px -16px 16px;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+body .menu-content-check-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+body .menu-content-check:hover {
+  margin-right: -10px;
+}
+body .menu-content-check-icon:hover {
+  transform: rotate(0);
+}
+body .delay-1 {
+  animation-delay: 0.1s;
+}
+body .delay-2 {
+  animation-delay: 0.2s;
+}
+body .delay-3 {
+  animation-delay: 0.3s;
+}
+body .delay-4 {
+  animation-delay: 0.4s;
+}
+body .delay-5 {
+  animation-delay: 0.5s;
+}
+body .delay-6 {
+  animation-delay: 0.6s;
+}
+body .delay-7 {
+  animation-delay: 0.7s;
+}
+body .delay-8 {
+  animation-delay: 0.8s;
 }
 body footer {
   padding-top: 7px;
