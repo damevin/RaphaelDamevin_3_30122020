@@ -16,8 +16,73 @@ body h3 {
 body p {
   font-family: "Roboto Thin", sans-serif;
 }
+body .loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .loader__item {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  animation: jump 1s;
+  animation-iteration-count: 1;
+}
+body .loader__itemContainer {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+}
+body .loader__item--1 {
+  background-color: #9356DC;
+}
+body .loader__item--2 {
+  background-color: #FF79DA;
+  animation-delay: 0.25s;
+}
+body .loader__item--3 {
+  background-color: #99E2D0;
+  animation-delay: 0.5s;
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body header {
-  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,29 +98,31 @@ body header .header--title h1 {
 }
 body header .header--location {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin: 0 -9999rem;
-  padding: 0.25rem 9999rem;
+  justify-content: center;
   background: rgba(231, 231, 231, 0.5);
   box-shadow: -1px 29px 23px -14px rgba(0, 0, 0, 0.13) inset;
 }
 body header .header--location p {
-  margin: 10px;
+  margin: 15px;
 }
 body header .explore--location {
   background-color: #f6f6f6;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 75px;
 }
 body header .explore--location .title {
-  padding: 0px 40px;
+  margin-top: 30px;
+  padding: 0px 70px;
   font-size: 15px;
 }
 body header .explore--location .subtitle {
   font-weight: 100;
-  font-size: 13px;
+  font-size: 16px;
   padding: 0 40px;
   margin-bottom: 40px;
 }
@@ -63,9 +130,12 @@ body header .explore--location .button-explore {
   background: linear-gradient(#d579d5, #9d64d5);
   box-shadow: 1px 16px 43px -2px rgba(0, 0, 0, 0.15);
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 50px;
   padding: 18px 30px;
+}
+body .section--fonctionnalities {
+  font-family: "Roboto", sans-serif;
 }
 body .section--fonctionnalities .mini--card {
   margin: 10px 20px;
@@ -78,6 +148,7 @@ body .section--fonctionnalities .mini--card .content {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  box-shadow: 0px 26px 96px -63px rgba(0, 0, 0, 0.33);
 }
 body .section--fonctionnalities .mini--card .content .circle {
   background-color: #8a5dd5;
@@ -100,33 +171,41 @@ body .section--fonctionnalities .mini--card .secondary {
 }
 body .section--restaurants {
   padding-top: 15px;
+  padding-bottom: 30px;
   background-color: #f6f6f6;
 }
 body .section--restaurants .restaurant--card {
+  position: relative;
   margin: 10px;
   overflow: hidden;
   border-radius: 15px;
   background-color: white;
-  border: 1px grey solid;
+  box-shadow: 0px 26px 58px -22px rgba(0, 0, 0, 0.48);
 }
 body .section--restaurants .restaurant--card img {
-  height: 140px;
-  width: 320px;
+  height: 160px;
+  width: 100%;
   object-fit: cover;
 }
 body .section--restaurants .restaurant--card .content {
-  display: flex;
-  flex-direction: row;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 body .section--restaurants .restaurant--card .heart {
-  margin-top: 10px;
-  margin-left: 120px;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  cursor: pointer;
 }
 body .section--restaurants .restaurant--card .card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+  flex: 1;
+  width: 150px;
+  margin: 5px 0px 5px 10px;
+}
+body .section--restaurants .restaurant--card .card-content h4 {
+  margin: 0;
 }
 body .section--restaurants .restaurant--card .restaurant-name {
   font-family: "Roboto", sans-serif;
@@ -135,6 +214,21 @@ body .section--restaurants .restaurant--card .restaurant-name {
 body .section--restaurants .restaurant--card .restaurant-location {
   font-family: "Roboto Thin", sans-serif;
   font-weight: lighter;
+}
+body .section--restaurants .restaurant--card .novelties-flag {
+  position: absolute;
+  font-size: 13px;
+  top: 10px;
+  right: 10px;
+  background-color: #a9e0d1;
+  color: #3a8468;
+}
+body .section--restaurants .restaurant--card .novelties-flag p {
+  margin: 5px 10px 5px 10px;
+}
+body footer {
+  background-color: #353535;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
