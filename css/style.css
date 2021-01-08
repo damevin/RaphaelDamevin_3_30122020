@@ -277,11 +277,11 @@ body .menus-titles:after {
   bottom: 0;
 }
 body .menu-content-card {
+  margin: 15px;
   background-color: #fff;
-  padding: 1rem;
+  padding: 10px;
   display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
+  border-radius: 15px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
@@ -316,16 +316,17 @@ body .menu-price {
 body .menu-content-check {
   background-color: #99e2d0;
   margin: -16px -250px -16px 16px;
-  width: 4rem;
+  width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
 }
 body .menu-content-check-icon {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 25px;
+  width: 25px;
   background-color: white;
+  color: #99E2D0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +335,7 @@ body .menu-content-check-icon {
   transition-duration: 0.5s;
 }
 body .menu-content-check:hover {
-  margin-right: -10px;
+  margin-right: -20px;
 }
 body .menu-content-check-icon:hover {
   transform: rotate(0);
@@ -362,6 +363,19 @@ body .delay-7 {
 }
 body .delay-8 {
   animation-delay: 0.8s;
+}
+body .order-button {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .order-button p {
+  padding: 15px 40px;
+  background: linear-gradient(0deg, #d58adb 0%, #b17ddb 80%);
+  box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65);
+  border-radius: 30px;
+  color: white;
 }
 body footer {
   padding-top: 7px;
