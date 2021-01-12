@@ -1,0 +1,141 @@
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+  .banniere-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .sections-restaurants-menu {
+    background-color: $grey;
+    margin-top: -4rem;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+  }
+  .menu-header {
+    h2 {
+    font-family: $font-title;
+    }
+    font-weight: normal;
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .restaurants-menus {
+    display: grid;
+
+    @media (min-width:1025px) {
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 1rem;
+    }
+  }
+
+  .menus {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+
+    &__title {
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: normal;
+      font-family: $font-content;
+      &::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: $tertiary;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .menu-content {
+    
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: apparition .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+  
+    &__header {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex: 1;
+    }
+    &__title {
+      font-family: $font-content;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex: 1;
+    }
+    &__description {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    &__price {
+      font-family: $font-content;
+      font-weight: 700;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-left: .5rem;
+    }
+    &__confirmation {
+      background-color: $tertiary;
+      margin: -16px -250px -16px 16px;
+      width: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: .5s;
+    }
+
+    &:hover &__confirmation {
+      margin-right: -1rem;
+    }
+
+    &__check-icon {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    color: $tertiary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .8s;
+    }
+
+    &:hover &__check-icon {
+      transform: rotate(0);
+    }
+
+    &__icon {
+      color: $tertiary;
+    }
+  }
