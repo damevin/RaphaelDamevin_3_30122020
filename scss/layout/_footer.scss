@@ -1,26 +1,27 @@
 footer {
-    padding-top: 7px;
-    padding-bottom: 20px;
-    background-color: rgb(53,53,53);
-    color: rgb(255,255,255)!important;;
+  padding: 8px 0px 20px 10px;
+  background-color: $black;
+  color: $white!important;
 
     h3 {
       font-family: $font-title!important;
       font-weight: normal;
+      margin: 8px;
     }
     li {
       font-family: $font-content;
       list-style: none;
-      margin: 5px;
+      margin: 8px;
     }
     a {
       color: white!important;
     }
     i {
-      margin-right: 5px;
+      margin-right: 8px;
+      font-size: 13px;
     }
     ul {
-      padding: 10px;
+      padding: 10px 0px ;
     }
     
   }

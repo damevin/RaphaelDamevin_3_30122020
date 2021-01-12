@@ -28,21 +28,21 @@
 
 .explore-location {
 
-  background-color: rgb(246, 246, 246);
+  background-color: $white;
   text-align: center;
   font-family: $font-content;
   padding-bottom: 75px;
 
   &__title {
-    padding: 20px 70px;
-    font-size: 15px;
+    padding: 20px 75px 0px;
+    font-size: 18px;
   }
 
   &__subtitle {
     font-weight: 100;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 40px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
   }
   &__button {
     background: linear-gradient($gradientColor, $primary);
