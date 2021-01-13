@@ -26,21 +26,21 @@ Thomas DIMNET : revue de code
 ## Changelog
 
 
-V1.1 (dec20) :
+V1.1 (dec21) :
 
 
 - Publication de l'application web
 - Correctifs au validateur W3C
 
 
-v.1.0.1 (janv20) :
+v.1.0.1 (janv21) :
 
 - Corrections du code
 - Ajout d'une animation sur le bouton "favori"
 - Ajout de la loading page
 
 
-v.1.0.0 (janv20) :
+v.1.0.0 (dec20) :
 
 - Création de la structure HTML et de l'architecture SCSS
 
