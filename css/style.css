@@ -462,9 +462,8 @@ template {
 }
 
 .section-restaurants {
-  padding-top: 15px;
   padding-bottom: 30px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
 .section-restaurants .restaurant-card {
@@ -487,13 +486,6 @@ template {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.section-restaurants .restaurant-card .heart {
-  height: 32px;
-  width: 32px;
-  padding: 0;
-  cursor: pointer;
 }
 
 .section-restaurants .restaurant-card .card-content {
@@ -521,8 +513,8 @@ template {
   font-size: 13px;
   top: 10px;
   right: 10px;
-  background-color: #a9e0d1;
-  color: #3a8468;
+  background-color: #9ae2d0;
+  color: #278666;
 }
 
 .section-restaurants .restaurant-card .novelties-flag p {
@@ -667,10 +659,13 @@ footer ul {
   width: 100%;
 }
 
-.sections-restaurants-menu {
+.section-two {
+  padding: 10px 0px 5px 0px;
   background-color: #F6F6F6;
-  border-radius: 30px 30px 0 0;
-  margin-top: -70px;
+}
+
+.sections-restaurants-menu {
+  border-radius: 30px 30px 0px 0px;
   position: relative;
 }
 
