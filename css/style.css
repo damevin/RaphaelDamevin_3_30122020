@@ -521,6 +521,10 @@ template {
   margin: 5px 10px 5px 10px;
 }
 
+.classDuCul {
+  width: auto;
+}
+
 .heart input[type=checkbox] {
   display: none;
 }
