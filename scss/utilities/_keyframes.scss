@@ -28,3 +28,68 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes animateCircle {
+    40% {
+      transform: scale(10);
+      opacity: 1;
+      fill: #DD4688;
+    }
+    55% {
+      transform: scale(11);
+      opacity: 1;
+      fill: #D46ABF;
+    }
+    65% {
+      transform: scale(12);
+      opacity: 1;
+      fill: $primary;
+    }
+    75% {
+      transform: scale(13);
+      opacity: 1;
+      fill: transparent;
+      stroke: $primary;
+      stroke-width: 0.5;
+    }
+    85% {
+      transform: scale(17);
+      opacity: 1;
+      fill: transparent;
+      stroke: $primary;
+      stroke-width: 0.2;
+    }
+    95% {
+      transform: scale(18);
+      opacity: 1;
+      fill: transparent;
+      stroke: $primary;
+      stroke-width: 0.1;
+    }
+    100% {
+      transform: scale(19);
+      opacity: 1;
+      fill: transparent;
+      stroke: $primary;
+      stroke-width: 0;
+    }
+  }
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.2);
+    }
+    40% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes animateHeartOut {
+    0% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

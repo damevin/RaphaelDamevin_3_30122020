@@ -8,6 +8,7 @@ $wildSand: #F6F6F6;
 $lavenderIndigo: #9256dc;
 $gray: #818181;
 $whiteSmoke: #F6F6F6;
+$secondaryWhiteSmoke: RGBA(246,246,246,0.56);
 $tuatara: #363636;
 
 // Fonctionnal color variables
@@ -20,5 +21,6 @@ $gradientColor: $orchid;
 $grey: $wildSand;
 $secondaryGrey : $gray;
 $white: $whiteSmoke;
+$whiteBackground: $secondaryWhiteSmoke;
 $black: $tuatara;
 
