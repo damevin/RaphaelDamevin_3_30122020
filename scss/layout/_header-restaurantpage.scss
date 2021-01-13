@@ -108,16 +108,16 @@
       font-family: $font-content;
       font-weight: 700;
       justify-content: flex-end;
-      padding-left: 10px;
+      padding-left: 20px;
     }
     &__confirmation {
       align-items: center;
       background-color: $tertiary;
       display: flex;
       justify-content: center;
-      margin: -16px -250px -16px 16px;
+      margin: -16px -120px -16px 16px;
       transition-duration: .5s;
-      width: 64px;
+      width: 104px;
     }
 
     &:hover &__confirmation {

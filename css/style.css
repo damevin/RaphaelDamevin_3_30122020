@@ -768,7 +768,7 @@ footer ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   justify-content: flex-end;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .menu-content__confirmation {
@@ -776,9 +776,9 @@ footer ul {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
-  margin: -16px -250px -16px 16px;
+  margin: -16px -120px -16px 16px;
   transition-duration: .5s;
-  width: 64px;
+  width: 104px;
 }
 
 .menu-content:hover .menu-content__confirmation {
