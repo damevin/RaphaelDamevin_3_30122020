@@ -1,35 +1,35 @@
 .header-title {
-  height: 80px;
   display: flex;
+  height: 80px;
   justify-content: center;
 
   .back-home {
+    left: 15px;
     position: absolute;
     top: 30px;
-    left: 15px;
   }
 }
 
   .banniere-img {
-    width: 100%;
     max-height: 300px;
     object-fit: cover;
+    width: 100%;
   }
   .sections-restaurants-menu {
     background-color: $grey;
-    margin-top: -4rem;
     border-radius: 30px 30px 0 0;
+    margin-top: -70px;
     position: relative;
   }
   .menu-header {
     h2 {
     font-family: $font-title;
     }
-    font-weight: normal;
-    padding: 1rem 2rem 0 1rem;
-    display: flex;
     align-items: center;
+    display: flex;
+    font-weight: normal;
     justify-content: space-between;
+    padding: 10px 20px 0 10px;
   }
 
   .restaurants-menus {
@@ -44,33 +44,32 @@
   .menus {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 1rem;
+    padding: 0px 10px;
 
     &__title {
-      text-transform: uppercase;
-      position: relative;
-      padding-bottom: 0.5rem;
-      font-weight: normal;
       font-family: $font-content;
+      font-weight: normal;
+      padding-bottom: 6px;
+      position: relative;
+      text-transform: uppercase;
       &::after {
-        content: "";
-        width: 3rem;
-        height: 0.25rem;
         background-color: $tertiary;
-        position: absolute;
-        left: 0;
         bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 30px;
       }
     }
   }
 
   .menu-content {
-    
     background-color: #fff;
-    padding: 1rem;
+    padding: 10px;
     display: flex;
-    border-radius: .75rem;
-    margin: 1rem 0;
+    border-radius: 15px;
+    margin: 20px 0px;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
     overflow: hidden;
     cursor: pointer;
@@ -81,44 +80,44 @@
     max-width: 100%;
   
     &__header {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
       flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     &__title {
+      flex: 1;
       font-family: $font-content;
       font-size: 16px;
       font-weight: bold;
       margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
       overflow: hidden;
-      flex: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     &__description {
       margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   
     &__price {
+      align-items: flex-end;
+      display: flex;
       font-family: $font-content;
       font-weight: 700;
-      display: flex;
       justify-content: flex-end;
-      align-items: flex-end;
-      padding-left: .5rem;
+      padding-left: 10px;
     }
     &__confirmation {
-      background-color: $tertiary;
-      margin: -16px -250px -16px 16px;
-      width: 64px;
-      display: flex;
       align-items: center;
+      background-color: $tertiary;
+      display: flex;
       justify-content: center;
+      margin: -16px -250px -16px 16px;
       transition-duration: .5s;
+      width: 64px;
     }
 
     &:hover &__confirmation {
@@ -126,16 +125,16 @@
     }
 
     &__check-icon {
-    height: 25px;
-    width: 25px;
+    align-items: center;
     background-color: white;
+    border-radius: 100px;
     color: $tertiary;
     display: flex;
-    align-items: center;
+    height: 25px;
     justify-content: center;
-    border-radius: 100px;
     transform: rotate(180deg);
     transition-duration: .8s;
+    width: 25px;
     }
 
     &:hover &__check-icon {
