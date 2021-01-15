@@ -3,10 +3,12 @@
   @media screen and (min-width: 600px) {
     padding: 10px 20px;
   }
+
   @media screen and (min-width: 1024px) {
     padding: 10px 50px;
   }
 }
+
 .section-fonctionnalities {
 
   @media screen and (min-width: 900px) {
@@ -15,46 +17,54 @@
     margin-bottom: 20px;
   }
 
-  font-family: $font-content; 
-    .minicard {
+
+  .minicard {
+
     margin: 20px 20px;
     box-shadow: 0px 2px 19px -2px rgba(0,0,0,0.17);
     border-radius: 25px;
     background-color: $white;
 
-        &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 70px;
-            .circle {
-            background-color: $primary;
-            color: white;
-            border-radius: 50px;
-            padding: 5px 8px;
-            margin: 0px 10px 0px -11px ;
-            font-size: 15px
-            }
-            p {
-            font-size: 16px;
-            margin-left: 10px;
-            }
-            .miniicon {
-            width: 50px;
-            font-size: 20px;
-            text-align: center;
-            color: $secondaryGrey;
-            }
+    &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+
+      .circle {
+      background-color: $primary;
+      color: white;
+      border-radius: 50px;
+      padding: 5px 8px;
+      margin: 0px 10px 0px -11px ;
+      font-size: 15px
       }
-        .secondary {
-            background-color: $secondaryState!important;
-            border-radius: 15px;
-            .miniicon {
-              color: $tertiaryState!important;
-            }
-        }
+
+      p {
+      font-size: 16px;
+      margin-left: 10px;
+      }
+
+      .miniicon {
+      width: 50px;
+      font-size: 20px;
+      text-align: center;
+      color: $secondaryGrey;
+      }
+
+    }
+
+  .secondary {
+
+    background-color: $secondaryState!important;
+    border-radius: 15px;
+
+    .miniicon {
+      color: $tertiaryState!important;
+    }
   }
+}
 }
 
 

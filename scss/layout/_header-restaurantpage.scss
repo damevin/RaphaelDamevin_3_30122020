@@ -1,11 +1,14 @@
 .header-title {
+  
+  align-items: center;
   display: flex;
   height: 70px;
   justify-content: center;
-  align-items: center;
+  
   img {
     height: 25px;
   }
+
   .back-home {
     left: 15px;
     position: absolute;
@@ -13,136 +16,11 @@
   }
 }
 
-  .banniere-img {
-    max-height: 300px;
-    margin-bottom: -30px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .menu-header {
-    
-
-    h2 {
-    font-family: $font-title;
-    }
-    align-items: center;
-    display: flex;
-    font-weight: normal;
-    justify-content: space-between;
-    padding: 10px 20px 0 10px;
-  }
-
-  .restaurants-menus {
-    display: grid;
-
-    @media (min-width:1025px) {
-      grid-template-columns: repeat(3,1fr);
-      column-gap: 1rem;
-    }
-  }
-
-  .menus {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0px 10px;
-
-    &__title {
-      font-family: $font-content;
-      font-weight: normal;
-      padding-bottom: 6px;
-      position: relative;
-      text-transform: uppercase;
-      &::after {
-        background-color: $tertiary;
-        bottom: 0;
-        content: "";
-        height: 4px;
-        left: 0;
-        position: absolute;
-        width: 30px;
-      }
-    }
-  }
-
-  .menu-content {
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    border-radius: 15px;
-    margin: 20px 0px;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
-    overflow: hidden;
-    cursor: pointer;
-    animation: apparition .6s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 100%;
+.banniere-img {
   
-    &__header {
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    &__title {
-      flex: 1;
-      font-family: $font-content;
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    &__description {
-      margin: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  
-    &__price {
-      align-items: flex-end;
-      display: flex;
-      font-family: $font-content;
-      font-weight: 700;
-      justify-content: flex-end;
-      padding-left: 20px;
-    }
-    &__confirmation {
-      align-items: center;
-      background-color: $tertiary;
-      display: flex;
-      justify-content: center;
-      margin: -16px -120px -16px 16px;
-      transition-duration: .5s;
-      width: 104px;
-    }
+  margin-bottom: -30px;
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
 
-    &:hover &__confirmation {
-      margin-right: -10px;
-    }
-
-    &__check-icon {
-    align-items: center;
-    background-color: white;
-    border-radius: 100px;
-    color: $tertiary;
-    display: flex;
-    height: 25px;
-    justify-content: center;
-    transform: rotate(180deg);
-    transition-duration: .8s;
-    width: 25px;
-    }
-
-    &:hover &__check-icon {
-      transform: rotate(0);
-    }
-
-    &__icon {
-      color: $tertiary;
-    }
-  }
