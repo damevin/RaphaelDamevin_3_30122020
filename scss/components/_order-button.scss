@@ -1,17 +1,17 @@
 // Configuration for the order button on restaurant page
 
 .order-button {
-    padding: 30px;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    padding: 30px;
 
     p {
-      padding: 15px 40px;
       background: linear-gradient(0deg,rgb(213,138,219) 0%, rgb(177, 125, 219) 80%);
-      box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
       border-radius: 30px;
+      box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
       color: white;
+      padding: 15px 40px;
     }
     
   }

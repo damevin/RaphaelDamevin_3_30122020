@@ -1,54 +1,15 @@
-/// Commentaire un peu inutile mais il est là tu connais
-.classDuCul {
-  width: auto;
-}
+
 .heart {
   svg {
-    margin-right: 10px;
-    width: 20px;
-    fill: $secondaryGrey;
-    transition: .4s;
     cursor: pointer;
+    fill: $secondaryGrey;
+    margin-right: 10px;
+    transition: .4s;
+    width: 20px;
   }
 
   &:hover svg {
-    fill: tomato;
-    // transition: all 400ms ease-in-out;
-    fill: $primary;
-    // transform: scale(1.3);
     animation: animateHeart .4s;
+    fill: $primary;
   }
-
-//   input[type=checkbox] {
-//     display: none;
-//   }
-  
-//   input[type="checkbox"] {
-//     display: none;
-//   }
-  
-//   input[type="checkbox"] + label {
-//     z-index: 100;
-//     overflow: hidden;
-//     height: 40px;
-//     width: 40px;
-//     display: block;
-//     text-align: center;
-//     line-height: 50px;
-//     cursor: pointer;
-//     transition: all 300ms ease;
-//     border-radius: 50%;
-//   }
-
-  
-//   input[type="checkbox"]:checked + label svg {
-    // transition: all 300ms ease-in-out;
-    // fill: $primary;
-    // transform: scale(1.3);
-//  }
-//   label svg {
-    // margin-right: 10px;
-    // width: 20px;
-    // fill: $secondaryGrey;
-//   }
 }

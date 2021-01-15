@@ -1,12 +1,20 @@
-#section1 {
-    @media (min-width:900px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
+.section-one {
 
+  @media screen and (min-width: 600px) {
+    padding: 10px 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 10px 50px;
+  }
+}
 .section-fonctionnalities {
+
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 20px;
+  }
+
   font-family: $font-content; 
     .minicard {
     margin: 20px 20px;
@@ -38,29 +46,16 @@
             text-align: center;
             color: $secondaryGrey;
             }
-        }
+      }
         .secondary {
             background-color: $secondaryState!important;
             border-radius: 15px;
             .miniicon {
               color: $tertiaryState!important;
             }
-          }
-    }
-}
-.section-one {
-  @media screen and (min-width: 1024px) {
-    margin: 0px 80px;
+        }
   }
 }
-    
-@media screen and (min-width: 900px) {
-    
-    .section-fonctionnalities {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        margin-bottom: 20px;
-    }
 
 
-}
+    

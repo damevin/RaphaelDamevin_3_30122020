@@ -1,8 +1,14 @@
+
 .section-two {
   padding: 10px 0px 5px 0px;
   background-color: $grey;
+
+  @media screen and (min-width: 600px) {
+    padding: 10px 20px;
+  }
+
   @media screen and (min-width: 1024px) {
-    padding: 10px 80px;
+    padding: 10px 50px;
   }
 }
 
@@ -12,10 +18,11 @@
   border-radius: 30px 30px 0 0;
 }
 
+
 .section-restaurants {
     padding-bottom: 30px;
     background-color: $grey;
-
+    
     .restaurant-card {
       position: relative;
       margin: 10px;
@@ -29,6 +36,7 @@
         width: 100%;
         object-fit: cover;
       }
+
       .content {
         padding: 5px;
         display: flex;
@@ -40,19 +48,22 @@
         flex: 1;
         width: 150px;
         margin: 5px 0px 5px 10px;
+
         h4 {
           margin:0;
         }
-
       }
+
       .restaurant-name {
         font-family: $font-content;
         font-weight: bolder;
       }
+
       .restaurant-location {
         font-family: $font-content-secondary;
         font-weight: lighter;
       }
+
       .novelties-flag {
         position: absolute;
         font-size: 13px;
@@ -60,9 +71,15 @@
         right: 10px;
         background-color: $secondaryGreen;
         color: $primaryGreen;
+
         p {
           margin: 5px 10px 5px 10px ;
         }
+
       }
+    }
+    @media (min-width:900px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
