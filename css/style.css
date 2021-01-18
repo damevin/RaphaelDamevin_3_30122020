@@ -418,10 +418,11 @@ template {
 }
 
 .section-fonctionnalities .minicard {
-  margin: 20px 20px;
-  box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
-  border-radius: 25px;
   background-color: #F6F6F6;
+  border-radius: 25px;
+  box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
+  font-family: "Roboto", sans-serif;
+  margin: 20px 20px;
 }
 
 .section-fonctionnalities .minicard__content {
@@ -434,14 +435,15 @@ template {
 
 .section-fonctionnalities .minicard__content .circle {
   background-color: #9356DC;
+  border-radius: 50%;
   color: white;
-  border-radius: 50px;
-  padding: 5px 8px;
-  margin: 0px 10px 0px -11px;
   font-size: 15px;
+  margin: 0px 10px 0px -11px;
+  padding: 5px 8px;
 }
 
 .section-fonctionnalities .minicard__content p {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-left: 10px;
 }
@@ -715,7 +717,12 @@ body p {
   background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
   position: relative;
-  margin: -10px 100px 0px;
+}
+
+@media screen and (min-width: 900px) {
+  .sections-restaurants-menu {
+    margin: -10px 50px 0px;
+  }
 }
 
 .restaurants-menus {
@@ -757,15 +764,15 @@ body p {
 .menu-content {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.02);
   display: flex;
   margin: 20px 0px;
   overflow: hidden;
   padding: 10px;
   cursor: pointer;
-  animation: apparition .6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
+  animation: apparition .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
   transform: scale(0);
   max-width: 100%;
 }
@@ -842,9 +849,14 @@ body p {
 @keyframes apparition {
   0% {
     transform: scale(0);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
   }
   100% {
     transform: scale(1);
+    opacity: 100%;
   }
 }
 
@@ -870,67 +882,12 @@ body p {
   }
 }
 
-@keyframes animateCircle {
-  40% {
-    transform: scale(10);
-    opacity: 1;
-    fill: #DD4688;
-  }
-  55% {
-    transform: scale(11);
-    opacity: 1;
-    fill: #D46ABF;
-  }
-  65% {
-    transform: scale(12);
-    opacity: 1;
-    fill: #9356DC;
-  }
-  75% {
-    transform: scale(13);
-    opacity: 1;
-    fill: transparent;
-    stroke: #9356DC;
-    stroke-width: 0.5;
-  }
-  85% {
-    transform: scale(17);
-    opacity: 1;
-    fill: transparent;
-    stroke: #9356DC;
-    stroke-width: 0.2;
-  }
-  95% {
-    transform: scale(18);
-    opacity: 1;
-    fill: transparent;
-    stroke: #9356DC;
-    stroke-width: 0.1;
-  }
-  100% {
-    transform: scale(19);
-    opacity: 1;
-    fill: transparent;
-    stroke: #9356DC;
-    stroke-width: 0;
-  }
-}
-
 @keyframes animateHeart {
   0% {
     transform: scale(1);
   }
   40% {
     transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes animateHeartOut {
-  0% {
-    transform: scale(1.4);
   }
   100% {
     transform: scale(1);

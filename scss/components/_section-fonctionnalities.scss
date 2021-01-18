@@ -19,11 +19,11 @@
 
 
   .minicard {
-
-    margin: 20px 20px;
-    box-shadow: 0px 2px 19px -2px rgba(0,0,0,0.17);
-    border-radius: 25px;
     background-color: $white;
+    border-radius: 25px;
+    box-shadow: 0px 2px 19px -2px rgba(0,0,0,0.17);
+    font-family: $font-content;
+    margin: 20px 20px;
 
     &__content {
     display: flex;
@@ -34,14 +34,15 @@
 
       .circle {
       background-color: $primary;
+      border-radius: 50%;
       color: white;
-      border-radius: 50px;
+      font-size: 15px;
+      margin: 0px 10px 0px -11px;
       padding: 5px 8px;
-      margin: 0px 10px 0px -11px ;
-      font-size: 15px
       }
 
       p {
+      font-family: $font-content;
       font-size: 16px;
       margin-left: 10px;
       }
