@@ -26,7 +26,7 @@ Thomas DIMNET : revue de code
 ## Changelog
 
 
-V1.1 (dec21) :
+V1.1 (janv21) :
 
 
 - Publication de l'application web
