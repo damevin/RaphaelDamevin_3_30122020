@@ -1,7 +1,6 @@
 // configuration for loader, for configure animation ./utilities/_animations
 
 .loader {
-
   animation: loader 0.01s;
   animation-delay: 1.10s;
   animation-fill-mode: both;
@@ -17,7 +16,6 @@
   z-index: 10000;
     
     &__item {
-
       animation-iteration-count: 1;
       animation: jump 1s;
       border-radius: 40px;
@@ -25,31 +23,23 @@
       width: 40px;
   
       &Container {
-
         display: flex;
         justify-content: space-between;
         width: 200px;
-
       }
   
       &--1 {
-
         background-color: $primary;
-
       }
   
       &--2 {
-
         animation-delay: 0.25s;
         background-color: $secondary;
-
       }
   
       &--3 {
-
         animation-delay: 0.5s;
         background-color: $tertiary;
-        
       }
     }
 }
