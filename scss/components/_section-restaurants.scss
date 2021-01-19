@@ -14,7 +14,7 @@
 
 .section-restaurants {
 
-  @media (min-width:900px) {
+  @media (min-width:992px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
