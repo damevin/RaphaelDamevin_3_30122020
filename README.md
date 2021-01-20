@@ -10,11 +10,11 @@ Ce projet est crée dans le cadre de mon alternance "Développeur Front-End" che
 
 ## Installation du projet
 
-Installation du repository git clone https://github.com/damevin/____
+Installation du repository git clone https://github.com/damevin/RaphaelDamevin_3_30122020
 Ouvrir index.html
 
 ## Live demo
-https://damevin.github.io/___
+https://ohmyfood.dame.vin/
 
 ## Languages utilisés
 HTML5, SCSS
